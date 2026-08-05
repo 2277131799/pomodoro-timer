@@ -1,0 +1,45 @@
+{
+  "name": "pomodoro-timer",
+  "productName": "远少的番茄钟",
+  "version": "1.0.0",
+  "description": "A desktop Pomodoro timer built with Electron and React",
+  "main": "out/main/index.cjs",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "dist": "pnpm build && electron-builder --win portable"
+  },
+  "keywords": [
+    "pomodoro",
+    "timer",
+    "electron",
+    "react"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "electron-store": "^11.0.2",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "zustand": "^5.0.14"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^26.1.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "autoprefixer": "^10.5.4",
+    "electron": "^43.1.1",
+    "electron-builder": "^26.15.3",
+    "electron-vite": "^5.0.0",
+    "jimp": "^1.6.1",
+    "png-to-ico": "^3.0.2",
+    "postcss": "^8.5.19",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.1.5"
+  }
+}

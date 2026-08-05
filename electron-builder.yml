@@ -1,0 +1,22 @@
+appId: com.example.yuanshao-pomodoro
+productName: 远少的番茄钟
+copyright: Copyright © 2026
+electronDownload:
+  mirror: https://npmmirror.com/mirrors/electron/
+directories:
+  output: dist
+files:
+  - out/**/**
+  - build/**/**
+win:
+  target:
+    - target: portable
+      arch: x64
+  icon: build/icon.ico
+portable:
+  artifactName: ${productName}.exe
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: always
+  shortcutName: ${productName}

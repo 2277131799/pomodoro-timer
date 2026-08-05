@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-md-bg: #2a2624;
+  --color-md-surface: #36302d;
+  --color-md-card: #423b38;
+  --color-md-text: #e8e0da;
+  --color-md-muted: #b0a49c;
+  --color-md-work: #c89f9c;
+  --color-md-work-dark: #a6807d;
+  --color-md-short: #9fb3a0;
+  --color-md-short-dark: #7e917f;
+  --color-md-long: #9aaab8;
+  --color-md-long-dark: #7a8a98;
+  --color-md-accent: #c4b5a5;
+  --color-md-glow: rgba(200, 159, 156, 0.12);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes flow {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.animate-shimmer {
+  background-size: 400% 400%;
+  animation: shimmer 16s ease infinite;
+}
+
+.animate-flow {
+  animation: flow 24s linear infinite;
+}
+
+/* Custom range slider styling for Morandi theme */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
